@@ -23,13 +23,16 @@ var map = new mapboxgl.Map({
     center: [39.300569, -6.180694], // starting position [lng, lat]
     zoom: 9 // starting zoom
 });
+    map.on('load',function(){
     
+
     $.ajax({url:"http://localhost/Mapbox/writeToFile.php",
             	method:'POST',data:'',contentType:false,processData:false,success:function(data){
             	   
    
                 },error: function(e){console.log('No internet connection ');}
             });
+        });
 </script>
 
 </body>
