@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="omarshehe" />
+	<title>Mapbox </title>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='assets/css/custom_style.css' rel='stylesheet' />
+    <style>
+    
+  </style>
+</head>
+
+<body>
+<div class="container">
+    <div id='map'></div>
+</div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoib21hcnNoZWhlIiwiYSI6ImNqang5MTczdzB4MWkzdm1rdHd6YjRmMzgifQ.lhbp9GBny49eL6UaochY6Q';
+var map = new mapboxgl.Map({
+  container: 'map',
+  center: [39.300569, -6.180694],
+  zoom: 10.4,
+  style: 'mapbox://styles/omarshehe/cjkuxclv808cg2rqeoos5dhsl',
+  
+  
+});
+map.on('load',function(){
+    
+});
+</script>
+
+
+</body>
+</html>
